@@ -5,96 +5,102 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+body{
     background-color: rgb(216, 226, 230);
-    padding-top: 100px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-header img {
-    height: 36px;
-    margin-right: 16px;
-}
-
-header h1 {
-    font-size: 40px;
-    font-weight: bold;
+    width: 100vw;
 }
 
 .container {
-    max-width: 960px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    padding-top: 8vw;
 }
 
-form {
+header{
+    margin: 0 auto 64px;
+    width: 90%;
     display: flex;
-    max-width: 720px;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 56px;
+    align-items: center;
 }
 
-form input {
+header img{
+    height: 48px;
+    margin-right: 16px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+form{
+    width: 90%;
+    display: flex;
+    margin: 0 auto 40px;
+    justify-content: space-between;
+}
+
+.inputs{
+    width: 80%;
+    display: flex;
+    gap: 10%;
+}
+
+input{
+    width: 40%;
     background-color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 24px;
     border: none;
     border-bottom: 2px solid black;
     padding: 8px;
 }
 
-form button {
-    background-color: rgb(0, 143, 21);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-bottom: 3px solid rgb(0, 115, 17);
-    border-right: 3px solid rgb(0, 115, 17);
+#nota-atividade{
+    width: 20%;
 }
 
-form button:hover {
-    background-color: rgb(0, 193, 29);
+button{
+    width: 16%;
+    background-color: rgb(0, 31, 214);
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-bottom: 3px solid  rgb(0, 143, 21);
-    border-right: 3px solid  rgb(0, 143, 21);
+    padding: 8px 32px;
+    border-bottom: 3px solid rgb(0, 25, 172);
+    border-right: 3px solid rgb(0, 25, 172);
 }
 
-table th {
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 43, 255);
+    border-bottom: 3px solid  rgb(0, 31, 214);
+    border-right: 3px solid  rgb(0, 31, 214);
+}
+
+table{
+    width: 100%;
+}
+
+th{
     border-bottom: 2px solid black;
     padding: 16px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-table {
-    width: 100%;
-}
-
-table td {
+td{
     text-align: center;
     font-size: 18px;
     padding: 16px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.503);
+    border-bottom: 1px solid rgba(0, 0, 0, .6);
 }
 
-table td img {
+td img{
     height: 26px;
 }
 
-.resultado {
+.resultado{
     padding: 8px;
     font-weight: bold;
     color: white;
@@ -102,10 +108,70 @@ table td img {
     border-radius: 3px;
 }
 
-.aprovado {
+.aprovado{
     background-color:  rgb(0, 193, 29);
 }
 
-.reprovado {
+.reprovado{
     background-color:  rgb(193, 26, 0);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header img{
+        height: 24px;
+        margin-right: 8px;
+    }
+    
+    header h1{
+        font-size: 24px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .inputs{
+        width: 60%;
+        justify-content: space-between;
+
+    }
+
+    input{
+        width: 60%;
+        font-size: 16px;
+    }
+
+    #nota-atividade{
+        width: 30%;
+    }
+
+    button{
+        width: 30%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    table th{
+        font-size: 18px;
+    }
+
+    table td{
+        font-size: 16px;
+    }
+
+    td img{
+        height: 18px;
+    }
+
+    .resultado{
+        padding: 4px;
+    }
 }

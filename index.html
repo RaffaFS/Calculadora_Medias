@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de médias</title>
+    <title>Calculadora de Médias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,15 +16,17 @@
             <h1>Calculadora de Médias</h1>
         </header>
         <form id="form-atividade">
-            <input type="text" required id="nome-atividade" placeholder="Nome da atividade" />
-            <input type="number" min="0" max="10" required id="nota-atividade" placeholder="Nota" />
-            <button type="submit">Adicionar +</button>
+            <div class="inputs">
+                <input type="text" required id="nome-atividade" placeholder="Atividade" />
+                <input type="number" min="0" max="10" required id="nota-atividade" placeholder="Nota" />
+            </div>
+            <button type="submit">Adicionar</button>
         </form>
         <table cellspacing="0">
             <thead>
                 <tr>
-                    <th>Nome da atividade</th>
-                    <th>Nota da atividade</th>
+                    <th>Atividade</th>
+                    <th>Nota</th>
                     <th>Aprovado?</th>
                 </tr>
             </thead>

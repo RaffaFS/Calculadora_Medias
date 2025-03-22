@@ -119,8 +119,8 @@ td img{
 
 @media screen and (max-width: 768px){
     .container{
-        width: 80%;
-        border: red 2px solid;
+        padding-top: 16vw;
+        width: 90%;
     }
 
     header{
